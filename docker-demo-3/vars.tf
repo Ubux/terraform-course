@@ -1,11 +1,11 @@
 variable "AWS_REGION" {
-  default = "eu-west-1"
+  default = "us-east-1"
 }
 variable "PATH_TO_PRIVATE_KEY" {
-  default = "mykey"
+  default = "testkey"
 }
 variable "PATH_TO_PUBLIC_KEY" {
-  default = "mykey.pub"
+  default = "testkey.pub"
 }
 variable "ECS_INSTANCE_TYPE" {
   default = "t2.micro"
@@ -32,6 +32,5 @@ variable "INSTANCE_DEVICE_NAME" {
   default = "/dev/xvdh"
 }
 variable "JENKINS_VERSION" {
-  default = "2.19.1"
+  default = "2.32.2"
 }
-

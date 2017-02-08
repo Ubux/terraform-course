@@ -17,7 +17,7 @@ resource "aws_instance" "jenkins-instance" {
 }
 
 resource "aws_ebs_volume" "jenkins-data" {
-    availability_zone = "eu-west-1a"
+    availability_zone = "${var.AWS_REGION}a"
     size = 20
     type = "gp2" 
     tags {
