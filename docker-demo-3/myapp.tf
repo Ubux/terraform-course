@@ -40,6 +40,12 @@ resource "aws_elb" "myapp-elb" {
     lb_port = 80
     lb_protocol = "http"
   }
+  listener {
+    instance_port = 9001
+    instance_protocol = "http"
+    lb_port = 9001
+    lb_protocol = "http"
+  }
 
   health_check {
     healthy_threshold = 3
