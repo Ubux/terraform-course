@@ -2,7 +2,7 @@
   {
     "essential": true,
     "memory": 256,
-    "name": "myapp",
+    "name": "account",
     "cpu": 256,
     "environment": [{
       "name": "NODE_ENV",
